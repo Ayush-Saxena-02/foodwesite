@@ -1,0 +1,241 @@
+/*css reset*/
+body{background-color: white;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    margin: 3px 15px;
+
+}
+
+#logo img {
+    /*display: flex;
+    justify-content: center;
+    border: 1px solid blue;*/
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+
+}
+#navbar{
+    position: absolute;
+    top:0px;
+}
+#navbar ul {
+    margin-left: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    list-style: none;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 12px;
+    margin: 25px;
+    text-decoration: none;
+    border-radius: 20px;
+   
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color:white;
+
+}
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    height:  716px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: " ";
+    background: url("/bacgroundimg.jpg")no-repeat center/cover;
+    position: absolute;
+    height:745px;
+    width: 100%;
+    top :0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+    
+}
+/*services section */
+
+#service{
+    margin: 34px;
+    display: flex;
+}
+#service .box{
+    border: 2px solid brown;
+    padding: 15px;
+    margin: 25px 6px;
+    border-radius: 23px;
+    overflow: hidden;
+    background-color: rgb(231, 217, 217);
+
+
+    
+}
+#service .box img{
+    display: block;
+    margin: auto;
+height:100px;
+border: 2px solid black;
+
+
+}
+/*client section*/
+#client-section{
+    height: 344px;
+    position: relative;
+
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("/logo3.jpg")no-repeat center/cover ;
+    height: 340px;
+    top: 0px;
+    left: 0px;
+width: 100%;
+z-index: -1;
+opacity: 0.8;
+
+}
+.client-items{
+    padding: 34px;
+}
+#client img{
+    
+height: 150px;
+width: 100px;
+
+}
+/*contact section*/
+#contact{
+    position: relative;
+    height: 660px;
+    width: 100%;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("/backimg2.jpg")no-repeat center/cover;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}#contact-box form{
+    width:40% ;
+    height: 40%;
+
+}
+#contact-box label{
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+#contact-box input,#contact-box textarea{
+    align-items: center;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid rgb(94, 146, 110);
+    border-radius: 22px;
+    background-color: rgb(244, 238, 238) ;
+    opacity: 0.8;
+    overflow: hidden;
+
+
+
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/*utility classes*/
+.h-secondary{
+    text-align: center;
+    font-size: 2.3rem; 
+    padding: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.h-primarry{
+    text-align: center;
+    font-size: 3.0rem; 
+    padding: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#home h1{
+    text-align: center;
+    color: white;
+font-family: 'Times New Roman', Times, serif;
+}
+#home p{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+} 
+.btn{
+    padding: 6px  20px;
+    border: 2px solid white;
+    background-color:gray;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    margin: 17px;
+    cursor: pointer;
+     
+}
+.centre{
+    text-align: center;
+}

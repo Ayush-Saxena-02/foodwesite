@@ -1,0 +1,23 @@
+body{
+    background-color: red;
+}
+#home{
+    height: 240px;
+    flex-direction: column;
+}
+/*service section here*/
+#service{
+
+flex-direction: column;
+}
+/*navigation section here*/
+#navbar {
+    flex-direction: column;
+
+}
+#client-section{
+    overflow: hidden;
+}
+#contact::before{
+    height: 450px;
+}
